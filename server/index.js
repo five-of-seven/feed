@@ -7,6 +7,6 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 console.log(__dirname)
-app.use(express.static('../public'))
+app.use(express.static('dist'))
 
 app.listen(3000, () => console.log('listening on port 3000!'))
